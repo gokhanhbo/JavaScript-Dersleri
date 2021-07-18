@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Date Nesneleri</title>
+</head>
+<body>
+
+    <script>
+
+        var tarih = new Date();
+        //toString() => date bilgilerini string türüne çevirebiliriz.
+        document.write(tarih.toString()+"<br>");
+
+        var tarih = tarih.toString();
+
+        var date = tarih.split(" ");
+
+        document.write(date[1]+"<hr>");
+
+
+        // ya da
+
+        var tarih = new Date();
+
+        document.write(tarih.toString()+"<br>");
+        //get methodları
+        document.write("Gün : "+tarih.getDay()+"<br>");
+        document.write("Ay : "+tarih.getMonth()+"<br>");
+        document.write("Tarih : "+tarih.getDate()+"<br>");
+        document.write("Yıl : "+tarih.getFullYear()+"<br>");
+        document.write("Saat : "+tarih.getHours()+"<br>");
+        document.write("Dakika : "+tarih.getMinutes()+"<br>");
+        document.write("Saniye : "+tarih.getSeconds()+"<br>");
+        document.write("MiliSaniye : "+tarih.getMilliseconds()+"<br>");
+        //set methodları
+        tarih.setDate(20);
+        document.write("Tarih : "+tarih.getDate()+"<br>")
+
+
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
