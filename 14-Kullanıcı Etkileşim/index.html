@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı ile Etkileşim</title>
+</head>
+<body>
+    <!--
+        Javascriptte kullanıcı ile etkileşimde 3 farklı yöntem kullanılır.
+        1-Uyarı kutuları : alert()
+        2-Onay Kutuları : confirm()
+        3-Veri alma kutuları : prompt()
+
+        //Uygulama => captcha uygulaması
+    -->
+
+    <input id="text" type="text" placeholder="Lütfen Şifreyi Giriniz">
+    <input id="captcha" type="text" disabled>
+    <button onclick="checkCaptcha()">Kontrol Et</button>
+    <button onclick="goTo('Google','https://www.google.com/')">Google'a git</button>
+
+    <script src="captcha.js"></script>
+    <script src="confirm.js"></script>
+    <script src="prompt.js"></script>
+
+</body>
+</html>

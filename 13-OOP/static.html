@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Metodlar</title>
+</head>
+<body> 
+    <script>
+        //hesapla => bir sınıfımız olacak.
+        //topla() => metodumuz olacak.
+        //iki parametre değeri alacak ve toplayıp geri dönecek.
+
+        //static metod kullanmadan nasıl yaparız;
+
+        class hesapla{
+            topla(number1, number2){
+                return number1 + number2;
+            }
+        }
+        var hesap = new hesapla();
+        var result = hesap.topla(18,19);
+
+        document.write("Static kullanmadan iki değerin toplamı : "+result+"<br>");
+
+        //static metod ile nasıl yaparız;
+
+        class toplamhesabı{
+            static topla(number1, number2){ //"new()" kullanmadan direkt ulaşabiliyoruz.
+                return number1+number2
+            }
+        }
+        var result1 = toplamhesabı.topla(12,45);
+
+        document.write("Static kullanılarak iki değerin toplamı : "+result1+"<br>")
+    </script>
+
+
+    
+</body>
+</html>

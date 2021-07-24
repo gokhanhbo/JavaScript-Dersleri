@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13-OOP-Nesne Yönelimli Programlama</title>
+</head>
+<body>
+
+    <script>
+        //Sınıf ve Nesne Yapısı:
+        //Sınıfımız => Çalışanlar.
+        //Nesneler => Adı, yaşı, maaşı
+
+        //Sınıf Tanımlama:
+        class calisanlar{
+            //Metodlar tanımlayabiliyoruz.
+            //Yapıcı metod => ilk tanımlayacağımız metod constructor methodu
+            //Constructor => Sınıfımızı göndereceğimiz parametreleri tutar.
+            constructor(name,age){
+                //this kullanılır. => parametreleri tutacak ve sınıfımızın içerisinde
+                //parametrelerin kullanılmasını sağlayacaktır.
+                this.name = name;
+                this.age = age;
+            }
+            adi(){
+                return this.name;
+            }
+            yasi(){
+                return this.age;
+            }
+        }   
+
+        //Sınıfımızda nesneler üreterek sınıfımıza erişebiliriz ve sınıfımızdaki metodları
+        //çağırabiliriz.
+        //Nesne üretmek için => new() kullanılır.
+
+        var obj = new calisanlar("Ali", 19);
+        document.write(obj.adi()+" adlı çalışanın yaşı : "+obj.yasi()+"<br>");
+
+        var obj2 = new calisanlar("Ahmet",22);
+        document.write(obj2.adi()+" adlı çalışanın yaşı : "+obj2.yasi()+"<br>")
+
+
+    </script>
+    
+</body>
+</html>

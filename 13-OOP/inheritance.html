@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritence - Kalıtım</title>
+</head>
+<body>
+    <script>
+    //Kalıtım => miras almaktır.
+    //Person, student adında 2 tane class oluşturacağız. 
+
+    class Person{
+        constructor(name){
+            this.name = name;
+            this.department = "Bilgisayar Mühendisliği";
+            this.lesson = "JS Programlama";
+        }
+    }
+
+    class Student extends Person{
+        constructor(name,age){
+            super(name);//üst class'a erişim için kullanılır...
+            this.age = age;
+        }
+        data(){
+            document.write("Name : "+this.name+"<br>");
+            document.write("Department : "+this.department+"<br>");
+            document.write("Lesson : "+this.lesson+"<br>");
+            document.write("Age : "+this.age+"<br>");
+        }
+    }
+
+    var student = new Student("Gökhan",25);
+    student.data();
+
+    </script>   
+    
+</body>
+</html>
